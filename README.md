@@ -1,16 +1,15 @@
-# Portfolio Website
+# Anurag Chowdhury | Portfolio
 
-A modern personal portfolio website built to showcase projects, skills, experience, and contact information.
+A modern personal portfolio website designed to showcase my projects, skills, experience, and contact information.
 
-## ✨ Features
+## ✨ Highlights
 
-- Responsive single-page layout
+- Responsive and mobile-friendly layout
 - Hero section with introduction and call-to-action
-- About section
-- Skills section
-- Projects showcase
-- Contact section
-- Clean and lightweight front-end design
+- About and skills sections
+- Project showcase for featured work
+- Contact section for professional inquiries
+- Clean, modern front-end design
 
 ## 🛠️ Tech Stack
 
@@ -33,19 +32,20 @@ portfolio/
 │       ├── components/
 │       └── sections/
 ├── package.json
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ## 🚀 Run Locally
 
-You can open `index.html` directly in a browser, or run a local server:
+Open the project in a browser directly, or run a quick local server:
 
 ```bash
 cd portfolio
 python3 -m http.server 8000
 ```
 
-Then open:
+Then visit:
 
 ```bash
 http://localhost:8000
@@ -53,16 +53,23 @@ http://localhost:8000
 
 ## 📦 Deployment
 
-This project can be deployed easily on:
+This portfolio can be deployed on platforms such as:
 
 - GitHub Pages
 - Netlify
 - Vercel
 
-## 👤 Author
+## 👤 About Me
 
-Your Name
+I am a developer focused on building clean, responsive, and user-friendly digital experiences. This portfolio highlights my work, technical strengths, and ways to get in touch.
 
-## 📧 Contact
+## 🔗 Contact
 
-Add your email, LinkedIn, GitHub, or portfolio contact details here.
+- GitHub: https://github.com/AnuragC03
+- LinkedIn: Add your LinkedIn profile
+- Email: your.email@example.com
+- Portfolio: Add your live portfolio URL
+
+## 📝 Notes
+
+This README is ready to be customized further with your real contact links, projects, and professional details.
