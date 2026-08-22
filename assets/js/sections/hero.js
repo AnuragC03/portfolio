@@ -4,19 +4,19 @@ export const heroSection = String.raw`
     <div class="hero-content">
       <div class="hero-topbar">
         <span class="status-pill">● Available for work</span>
-        <span class="status-pill muted">AI • Data • Product</span>
+        <span class="status-pill muted">India • AI • Data</span>
       </div>
-      <p class="eyebrow">Full-stack AI & data enthusiast</p>
-      <h1>Building <span class="gradient-text">smart digital experiences</span> with ideas that scale.</h1>
-      <p>I design and build AI-powered products, data-driven dashboards, and thoughtful web experiences that turn complex problems into practical solutions.</p>
+      <p class="eyebrow">Developer • thinker • builder</p>
+      <h1>Turning <span class="gradient-text">data and ideas</span> into products with purpose.</h1>
+      <p>I craft AI-driven experiences, analytics dashboards, and thoughtful digital products that turn complexity into clarity and bold concepts into real-world solutions.</p>
       <div class="hero-badges">
-        <span class="hero-badge">AI Solutions</span>
-        <span class="hero-badge">Data Systems</span>
-        <span class="hero-badge">Product Design</span>
+        <span class="hero-badge">AI Products</span>
+        <span class="hero-badge">Creative UI</span>
+        <span class="hero-badge">Data Insights</span>
       </div>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-secondary">Book a Call</a>
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#contact" class="btn btn-secondary">Let’s Talk</a>
       </div>
       <div class="hero-metrics">
         <div class="metric-card">
@@ -29,7 +29,7 @@ export const heroSection = String.raw`
         </div>
         <div class="metric-card">
           <strong>AI</strong>
-          <span>Driven focus</span>
+          <span>First mindset</span>
         </div>
       </div>
     </div>

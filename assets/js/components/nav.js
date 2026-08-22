@@ -1,7 +1,7 @@
 export const navHTML = String.raw`
 <header class="site-header" data-aos="fade-down">
   <div class="container header-inner">
-    <a class="brand" href="#home">Anurag</a>
+    <a class="brand" href="#home">AC</a>
     <nav class="main-nav">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
