@@ -3,23 +3,26 @@ export const projectsSection = String.raw`
   <div class="container">
     <div class="section-heading" data-aos="fade-up">
       <h2>Featured Projects</h2>
-      <p>Selected work that highlights my passion for AI and data-driven solutions.</p>
+      <p>Selected work combining AI, analytics, and product thinking to solve meaningful problems.</p>
     </div>
     <div class="project-grid">
       <article class="card" data-aos="zoom-in">
+        <div class="card-tag">AI + Agriculture</div>
         <h3>AgroVetCare</h3>
-        <p>AI-based disease detection platform for livestock and crops, designed to improve farm productivity and reduce risk.</p>
-        <div class="card-footer">Technologies: Python, TensorFlow, Flask</div>
+        <p>AI-based disease detection platform for livestock and crops, built to help farmers act faster and reduce operational risk.</p>
+        <div class="card-footer">Python • TensorFlow • Flask</div>
       </article>
       <article class="card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card-tag">Finance + Insight</div>
         <h3>Stock Portfolio Analyzer</h3>
-        <p>Interactive stock portfolio tool that helps users analyze performance and uncover optimization opportunities.</p>
-        <div class="card-footer">Technologies: React, D3, APIs</div>
+        <p>An interactive portfolio dashboard that helps users evaluate performance trends and identify smarter investing opportunities.</p>
+        <div class="card-footer">React • D3 • APIs</div>
       </article>
       <article class="card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card-tag">Monitoring + UX</div>
         <h3>Smart Dashboard</h3>
-        <p>Custom dashboard for monitoring market trends and visualizing real-time trading signals.</p>
-        <div class="card-footer">Technologies: JavaScript, Chart.js, Node.js</div>
+        <p>A sleek market analytics interface for tracking signals, key metrics, and decision-making data in real time.</p>
+        <div class="card-footer">JavaScript • Chart.js • Node.js</div>
       </article>
     </div>
   </div>

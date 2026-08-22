@@ -493,7 +493,11 @@ html {
   line-height: 1.05;
 }
 
-.hero h1 span {
+.gradient-text {
+  background: linear-gradient(135deg, #c4b5fd 0%, #7c3aed 45%, #67e8f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   display: inline-block;
   animation: float 3s ease-in-out infinite;
 }
@@ -699,6 +703,33 @@ section::before {
   color: var(--muted);
 }
 
+.mini-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.mini-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.8rem 0.7rem;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.mini-stats strong {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.mini-stats span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
 .about ul {
   list-style: none;
   padding: 0;
@@ -777,6 +808,19 @@ section::before {
   margin-top: 0;
 }
 
+.card-tag {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(124, 58, 237, 0.14);
+  border: 1px solid rgba(124, 58, 237, 0.24);
+  color: #ddd6fe;
+}
+
 .card-footer {
   margin-top: 1.5rem;
   font-size: 0.95rem;
@@ -787,6 +831,13 @@ section::before {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  flex-wrap: wrap;
 }
 
 .email-link {
@@ -831,14 +882,16 @@ section::before {
     text-align: center;
   }
 
-  .hero-actions {
+  .hero-actions,
+  .contact-actions {
     justify-content: center;
   }
 
   .section-grid,
   .project-grid,
   .contact-card,
-  .skill-grid {
+  .skill-grid,
+  .mini-stats {
     grid-template-columns: 1fr;
   }
 
