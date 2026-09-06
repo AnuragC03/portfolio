@@ -38,7 +38,7 @@ portfolio/
 
 ## 🚀 Run Locally
 
-Open the project in a browser directly, or run a quick local server:
+Run a local server from the project directory. Opening `index.html` directly with a `file://` URL will not load the JavaScript modules correctly.
 
 ```bash
 cd portfolio

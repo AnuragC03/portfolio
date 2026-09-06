@@ -10,11 +10,11 @@ const app = document.getElementById('app');
 app.innerHTML = `<div class="app-shell">${navHTML}${heroSection}${aboutSection}${skillsSection}${projectsSection}${contactSection}${footerHTML}</div>`;
 
 const canvas = document.getElementById('bg-canvas');
+const ctx = canvas?.getContext('2d');
 const cursorGlow = document.getElementById('cursor-glow');
 const pointer = { x: window.innerWidth / 2, y: window.innerHeight / 2, active: false };
 
-if (canvas) {
-  const ctx = canvas.getContext('2d');
+if (ctx) {
   const dpr = window.devicePixelRatio || 1;
   let particles = [];
 
@@ -100,10 +100,17 @@ if (canvas) {
   animate();
 }
 
-AOS.init({
-  duration: 900,
-  once: true,
-});
+if (window.AOS?.init) {
+  window.AOS.init({
+    duration: 900,
+    once: true,
+  });
+} else {
+  // Keep content visible when the animation CDN is unavailable.
+  document.querySelectorAll('[data-aos]').forEach((element) => {
+    element.removeAttribute('data-aos');
+  });
+}
 
 document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -125,6 +132,25 @@ cards.forEach((card) => {
   });
 });
 
+const projectCards = document.querySelectorAll('.project-card');
+
+projectCards.forEach((projectCard) => {
+  const overviewUrl = projectCard.dataset.overview || 'https://github.com/AnuragC03';
+
+  projectCard.addEventListener('click', (event) => {
+    if (event.target.closest('a')) return;
+    window.open(overviewUrl, '_blank', 'noopener,noreferrer');
+  });
+
+  projectCard.addEventListener('keydown', (event) => {
+    if (event.target !== projectCard) return;
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      window.open(overviewUrl, '_blank', 'noopener,noreferrer');
+    }
+  });
+});
+
 const navLinks = document.querySelectorAll('.main-nav a');
 const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
 const menuToggle = document.querySelector('.menu-toggle');
@@ -132,15 +158,31 @@ const mobileNav = document.querySelector('.mobile-nav');
 const sections = document.querySelectorAll('section[id]');
 const header = document.querySelector('.site-header');
 
+const setMenuOpen = (open) => {
+  menuToggle.classList.toggle('open', open);
+  mobileNav.classList.toggle('open', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+  mobileNav.setAttribute('aria-hidden', String(!open));
+};
+
 menuToggle?.addEventListener('click', () => {
-  menuToggle.classList.toggle('open');
-  mobileNav.classList.toggle('open');
+  setMenuOpen(menuToggle.getAttribute('aria-expanded') !== 'true');
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menuToggle.classList.contains('open')) {
+    setMenuOpen(false);
+    menuToggle.focus();
+  }
+});
+
+window.matchMedia('(max-width: 860px)').addEventListener('change', () => {
+  setMenuOpen(false);
 });
 
 [...navLinks, ...mobileNavLinks].forEach((link) => {
   link.addEventListener('click', () => {
-    mobileNav.classList.remove('open');
-    menuToggle.classList.remove('open');
+    setMenuOpen(false);
   });
 });
 
