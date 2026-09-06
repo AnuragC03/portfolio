@@ -7,29 +7,29 @@ export const heroSection = String.raw`
         <span class="status-pill muted">India • AI • Product</span>
       </div>
       <p class="eyebrow">Developer • product thinker • builder</p>
-      <h1>I design <span class="gradient-text">high-impact digital products</span> that make AI and data feel useful.</h1>
-      <p>I build product experiences, decision systems, and intelligent interfaces that help teams understand faster, act smarter, and ship with more confidence.</p>
+      <h1>I build <span class="gradient-text">AI-powered digital products</span> that turn complex ideas into clear decisions.</h1>
+      <p>I design thoughtful interfaces, data-driven systems, and product experiences that help users move faster, understand better, and take action with confidence.</p>
       <div class="hero-badges">
         <span class="hero-badge">AI Products</span>
         <span class="hero-badge">Analytics UX</span>
         <span class="hero-badge">System Design</span>
       </div>
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
         <a href="#contact" class="btn btn-secondary">Let’s Talk</a>
       </div>
       <div class="hero-metrics">
         <div class="metric-card">
-          <strong>6+</strong>
-          <span>Years building</span>
+          <strong>4+ Years</strong>
+          <span>Building digital products</span>
         </div>
         <div class="metric-card">
-          <strong>20+</strong>
-          <span>Product-minded builds</span>
+          <strong>15+ Builds</strong>
+          <span>Product-focused experiments</span>
         </div>
         <div class="metric-card">
-          <strong>Impact</strong>
-          <span>Driven execution</span>
+          <strong>AI-first</strong>
+          <span>Problem-solving mindset</span>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@ export const heroSection = String.raw`
           <div class="screen-row">
             <div class="screen-card">
               <span class="screen-label">Projects</span>
-              <strong>20+</strong>
+              <strong>15+</strong>
             </div>
             <div class="screen-card accent">
               <span class="screen-label">Focus</span>
